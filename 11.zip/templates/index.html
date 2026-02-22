@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excellence College - Leading Education Institution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>EXCELLENCE COLLEGE</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Shape Your Future</h1>
+                <p class="hero-subtitle">Excellence in Education Since 1990</p>
+                <button class="cta-button">Apply Now</button>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <div class="image-3d">
+                <img src="{{ url_for('static', filename='images/college1.jpg') }}" alt="College Campus" class="college-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Excellence College</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Excellence College is a premier educational institution dedicated to providing world-class education and fostering innovation. With over 30 years of excellence in education, we have shaped the careers of thousands of successful professionals.</p>
+                    <p>Our commitment to academic excellence, combined with state-of-the-art facilities and experienced faculty, makes us the preferred choice for students seeking quality education.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-3d">
+                        <img src="{{ url_for('static', filename='images/college2.jpg') }}" alt="College Building" class="college-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <h2 class="section-title">Academic Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="card-3d">
+                        <h3>Engineering</h3>
+                        <p>Computer Science, Mechanical, Electrical, Civil Engineering programs with industry-aligned curriculum.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="card-3d">
+                        <h3>Business Administration</h3>
+                        <p>MBA, BBA programs designed to develop future business leaders and entrepreneurs.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="card-3d">
+                        <h3>Arts & Sciences</h3>
+                        <p>Comprehensive programs in Humanities, Social Sciences, and Natural Sciences.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="card-3d">
+                        <h3>Medical Sciences</h3>
+                        <p>Pre-medical and health sciences programs with modern laboratories and clinical training.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+        <div class="container">
+            <h2 class="section-title">Our Facilities</h2>
+            <div class="facilities-content">
+                <div class="facilities-image">
+                    <div class="image-3d">
+                        <img src="{{ url_for('static', filename='images/college3.jpg') }}" alt="College Facilities" class="college-img">
+                    </div>
+                </div>
+                <div class="facilities-list">
+                    <div class="facility-item">
+                        <h3>Modern Classrooms</h3>
+                        <p>Equipped with smart boards and audio-visual systems</p>
+                    </div>
+                    <div class="facility-item">
+                        <h3>Research Laboratories</h3>
+                        <p>State-of-the-art labs for practical learning and research</p>
+                    </div>
+                    <div class="facility-item">
+                        <h3>Library & Learning Center</h3>
+                        <p>Extensive collection of books, journals, and digital resources</p>
+                    </div>
+                    <div class="facility-item">
+                        <h3>Sports Complex</h3>
+                        <p>Indoor and outdoor sports facilities for physical fitness</p>
+                    </div>
+                    <div class="facility-item">
+                        <h3>Student Hostels</h3>
+                        <p>Comfortable accommodation with modern amenities</p>
+                    </div>
+                    <div class="facility-item">
+                        <h3>Cafeteria & Dining</h3>
+                        <p>Healthy and nutritious meals in a hygienic environment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Address</h3>
+                        <p>123 Education Avenue<br>City, State 12345<br>Country</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567<br>+1 (555) 123-4568</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p>info@excellencecollege.edu<br>admissions@excellencecollege.edu</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Phone Number">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Excellence College. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
